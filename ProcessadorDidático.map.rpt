@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProcessadorDidático
-Fri Dec 23 17:17:35 2016
+Fri Dec 23 21:50:45 2016
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Fri Dec 23 17:17:35 2016        ;
+; Analysis & Synthesis Status   ; Successful - Fri Dec 23 21:50:45 2016        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; ProcessadorDidático                          ;
 ; Top-level Entity Name         ; ULA                                          ;
@@ -150,13 +150,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                     ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                        ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------+
-; ULA.vhd                          ; yes             ; User VHDL File  ; C:/Users/Pedro Ivo/Desktop/Pedro Ivo/Disciplinas/Arquitetura de Computadores/Trabalho Final/ULA.vhd ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                          ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                             ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+
+; ULA.vhd                          ; yes             ; User VHDL File  ; C:/Users/Pedro Ivo/Desktop/Pedro Ivo/Disciplinas/Arquitetura de Computadores/ProcessadorDidatico/ULA.vhd ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------+
@@ -239,7 +239,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Fri Dec 23 17:17:34 2016
+    Info: Processing started: Fri Dec 23 21:50:42 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProcessadorDidático -c ProcessadorDidático
 Info: Found 2 design units, including 1 entities, in source file processadordidático.vhd
     Info: Found design unit 1: ProcessadorDidatico-ProcessadorDidatico_Arch
@@ -247,15 +247,18 @@ Info: Found 2 design units, including 1 entities, in source file processadordidá
 Info: Found 2 design units, including 1 entities, in source file ula.vhd
     Info: Found design unit 1: ULA-ULA_Arch
     Info: Found entity 1: ULA
+Info: Found 2 design units, including 1 entities, in source file bancoregistradores.vhd
+    Info: Found design unit 1: BancoReg-BancoReg_Arch
+    Info: Found entity 1: BancoReg
 Info: Elaborating entity "ULA" for the top level hierarchy
 Info: Implemented 84 device resources after synthesis - the final resource count might be different
     Info: Implemented 35 input pins
     Info: Implemented 16 output pins
     Info: Implemented 33 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 227 megabytes
-    Info: Processing ended: Fri Dec 23 17:17:37 2016
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 228 megabytes
+    Info: Processing ended: Fri Dec 23 21:50:46 2016
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:01
 
 
