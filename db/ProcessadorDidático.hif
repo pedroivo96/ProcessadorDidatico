@@ -73,6 +73,36 @@ ON
 AUTO_ROM_RECOGNITION
 ON
 }
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Mux3To1_16Bits
+# storage
+db|ProcessadorDidático.(2).cnf
+db|ProcessadorDidático.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mux3to1_16bits.vhd
+a219f3f1eb11c14d6cb7aaee251abf
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
 # hierarchies {
 |
 }

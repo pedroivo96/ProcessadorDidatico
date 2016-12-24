@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProcessadorDidático
-Fri Dec 23 21:50:45 2016
+Fri Dec 23 22:16:57 2016
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Fri Dec 23 21:50:45 2016        ;
+; Analysis & Synthesis Status   ; Successful - Fri Dec 23 22:16:57 2016        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; ProcessadorDidático                          ;
-; Top-level Entity Name         ; ULA                                          ;
+; Top-level Entity Name         ; Mux3To1_16Bits                               ;
 ; Family                        ; Stratix II                                   ;
 ; Logic utilization             ; N/A                                          ;
-;     Combinational ALUTs       ; 33                                           ;
+;     Combinational ALUTs       ; 16                                           ;
 ;     Dedicated logic registers ; 0                                            ;
 ; Total registers               ; 0                                            ;
-; Total pins                    ; 51                                           ;
+; Total pins                    ; 66                                           ;
 ; Total virtual pins            ; 0                                            ;
 ; Total block memory bits       ; 0                                            ;
 ; DSP block 9-bit elements      ; 0                                            ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+---------------------+
 ; Option                                                                     ; Setting            ; Default Value       ;
 +----------------------------------------------------------------------------+--------------------+---------------------+
-; Top-level entity name                                                      ; ULA                ; ProcessadorDidático ;
+; Top-level entity name                                                      ; Mux3To1_16Bits     ; ProcessadorDidático ;
 ; Family name                                                                ; Stratix II         ; Stratix II          ;
 ; Use Generated Physical Constraints File                                    ; Off                ;                     ;
 ; Use smart compilation                                                      ; Off                ; Off                 ;
@@ -150,53 +150,53 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                          ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                             ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+
-; ULA.vhd                          ; yes             ; User VHDL File  ; C:/Users/Pedro Ivo/Desktop/Pedro Ivo/Disciplinas/Arquitetura de Computadores/ProcessadorDidatico/ULA.vhd ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                     ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                        ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------+
+; Mux3To1_16Bits.vhd               ; yes             ; User VHDL File  ; C:/Users/Pedro Ivo/Desktop/Pedro Ivo/Disciplinas/Arquitetura de Computadores/ProcessadorDidatico/Mux3To1_16Bits.vhd ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                    ;
-+-----------------------------------------------+----------------+
-; Resource                                      ; Usage          ;
-+-----------------------------------------------+----------------+
-; Estimated ALUTs Used                          ; 33             ;
-; Dedicated logic registers                     ; 0              ;
-;                                               ;                ;
-; Estimated ALUTs Unavailable                   ; 16             ;
-;                                               ;                ;
-; Total combinational functions                 ; 33             ;
-; Combinational ALUT usage by number of inputs  ;                ;
-;     -- 7 input functions                      ; 0              ;
-;     -- 6 input functions                      ; 16             ;
-;     -- 5 input functions                      ; 0              ;
-;     -- 4 input functions                      ; 0              ;
-;     -- <=3 input functions                    ; 17             ;
-;                                               ;                ;
-; Combinational ALUTs by mode                   ;                ;
-;     -- normal mode                            ; 16             ;
-;     -- extended LUT mode                      ; 0              ;
-;     -- arithmetic mode                        ; 17             ;
-;     -- shared arithmetic mode                 ; 0              ;
-;                                               ;                ;
-; Estimated ALUT/register pairs used            ; 49             ;
-;                                               ;                ;
-; Total registers                               ; 0              ;
-;     -- Dedicated logic registers              ; 0              ;
-;     -- I/O registers                          ; 0              ;
-;                                               ;                ;
-; Estimated ALMs:  partially or completely used ; 25             ;
-;                                               ;                ;
-; I/O pins                                      ; 51             ;
-; Maximum fan-out node                          ; ControleULA[0] ;
-; Maximum fan-out                               ; 33             ;
-; Total fan-out                                 ; 177            ;
-; Average fan-out                               ; 2.11           ;
-+-----------------------------------------------+----------------+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++-----------------------------------------------+-------------+
+; Resource                                      ; Usage       ;
++-----------------------------------------------+-------------+
+; Estimated ALUTs Used                          ; 16          ;
+; Dedicated logic registers                     ; 0           ;
+;                                               ;             ;
+; Estimated ALUTs Unavailable                   ; 0           ;
+;                                               ;             ;
+; Total combinational functions                 ; 16          ;
+; Combinational ALUT usage by number of inputs  ;             ;
+;     -- 7 input functions                      ; 0           ;
+;     -- 6 input functions                      ; 0           ;
+;     -- 5 input functions                      ; 16          ;
+;     -- 4 input functions                      ; 0           ;
+;     -- <=3 input functions                    ; 0           ;
+;                                               ;             ;
+; Combinational ALUTs by mode                   ;             ;
+;     -- normal mode                            ; 16          ;
+;     -- extended LUT mode                      ; 0           ;
+;     -- arithmetic mode                        ; 0           ;
+;     -- shared arithmetic mode                 ; 0           ;
+;                                               ;             ;
+; Estimated ALUT/register pairs used            ; 16          ;
+;                                               ;             ;
+; Total registers                               ; 0           ;
+;     -- Dedicated logic registers              ; 0           ;
+;     -- I/O registers                          ; 0           ;
+;                                               ;             ;
+; Estimated ALMs:  partially or completely used ; 8           ;
+;                                               ;             ;
+; I/O pins                                      ; 66          ;
+; Maximum fan-out node                          ; Controle[0] ;
+; Maximum fan-out                               ; 16          ;
+; Total fan-out                                 ; 96          ;
+; Average fan-out                               ; 1.17        ;
++-----------------------------------------------+-------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -204,7 +204,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |ULA                       ; 33 (33)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 51   ; 0            ; |ULA                ; work         ;
+; |Mux3To1_16Bits            ; 16 (16)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 66   ; 0            ; |Mux3To1_16Bits     ; work         ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -229,7 +229,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 8:1                ; 16 bits   ; 80 ALUTs      ; 64 ALUTs             ; 16 ALUTs               ; No         ; |ULA|Mux15                 ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; No         ; |Mux3To1_16Bits|Mux15      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -239,7 +239,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Fri Dec 23 21:50:42 2016
+    Info: Processing started: Fri Dec 23 22:16:56 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProcessadorDidático -c ProcessadorDidático
 Info: Found 2 design units, including 1 entities, in source file processadordidático.vhd
     Info: Found design unit 1: ProcessadorDidatico-ProcessadorDidatico_Arch
@@ -250,15 +250,25 @@ Info: Found 2 design units, including 1 entities, in source file ula.vhd
 Info: Found 2 design units, including 1 entities, in source file bancoregistradores.vhd
     Info: Found design unit 1: BancoReg-BancoReg_Arch
     Info: Found entity 1: BancoReg
-Info: Elaborating entity "ULA" for the top level hierarchy
-Info: Implemented 84 device resources after synthesis - the final resource count might be different
-    Info: Implemented 35 input pins
+Info: Found 2 design units, including 1 entities, in source file mux2to1_16bits.vhd
+    Info: Found design unit 1: Mux2To1_16Bits-Mux2To1_16Bits_Arch
+    Info: Found entity 1: Mux2To1_16Bits
+Info: Found 2 design units, including 1 entities, in source file mux3to1_16bits.vhd
+    Info: Found design unit 1: Mux3To1_16Bits-Mux3To1_16Bits_Arch
+    Info: Found entity 1: Mux3To1_16Bits
+Info: Found 2 design units, including 1 entities, in source file mux4to1_16bits.vhd
+    Info: Found design unit 1: Mux4To1_16Bits-Mux4To1_16Bits_Arch
+    Info: Found entity 1: Mux4To1_16Bits
+Info: Elaborating entity "Mux3To1_16Bits" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at Mux3To1_16Bits.vhd(23): signal "Entrada3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Implemented 82 device resources after synthesis - the final resource count might be different
+    Info: Implemented 50 input pins
     Info: Implemented 16 output pins
-    Info: Implemented 33 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Implemented 16 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 228 megabytes
-    Info: Processing ended: Fri Dec 23 21:50:46 2016
-    Info: Elapsed time: 00:00:04
+    Info: Processing ended: Fri Dec 23 22:16:58 2016
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 
