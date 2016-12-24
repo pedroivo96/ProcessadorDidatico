@@ -2,14 +2,34 @@
 Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
-Type           : Worst-case tpd
+Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 10.844 ns
-From           : Entrada3[4]
-To             : Saida[4]
+Actual Time    : 3.882 ns
+From           : Controle
+To             : Saida[15]~reg0
 From Clock     : --
+To Clock       : Clock
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.840 ns
+From           : Saida[3]~reg0
+To             : Saida[3]
+From Clock     : Clock
 To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -2.522 ns
+From           : Entrada[12]
+To             : Saida[12]~reg0
+From Clock     : --
+To Clock       : Clock
 Failed Paths   : 0
 
 Type           : Total number of failed paths

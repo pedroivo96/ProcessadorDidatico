@@ -1,5 +1,5 @@
 Flow report for ProcessadorDidático
-Fri Dec 23 22:17:14 2016
+Fri Dec 23 22:42:33 2016
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,17 +38,17 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +-------------------------------+----------------------------------------------+
-; Flow Status                   ; Successful - Fri Dec 23 22:17:14 2016        ;
+; Flow Status                   ; Successful - Fri Dec 23 22:42:33 2016        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; ProcessadorDidático                          ;
-; Top-level Entity Name         ; Mux3To1_16Bits                               ;
+; Top-level Entity Name         ; Register16Bits                               ;
 ; Family                        ; Stratix II                                   ;
 ; Met timing requirements       ; Yes                                          ;
 ; Logic utilization             ; < 1 %                                        ;
-;     Combinational ALUTs       ; 16 / 12,480 ( < 1 % )                        ;
-;     Dedicated logic registers ; 0 / 12,480 ( 0 % )                           ;
-; Total registers               ; 0                                            ;
-; Total pins                    ; 66 / 343 ( 19 % )                            ;
+;     Combinational ALUTs       ; 0 / 12,480 ( 0 % )                           ;
+;     Dedicated logic registers ; 16 / 12,480 ( < 1 % )                        ;
+; Total registers               ; 16                                           ;
+; Total pins                    ; 35 / 343 ( 10 % )                            ;
 ; Total virtual pins            ; 0                                            ;
 ; Total block memory bits       ; 0 / 419,328 ( 0 % )                          ;
 ; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/23/2016 22:16:56 ;
+; Start date & time ; 12/23/2016 22:42:16 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ProcessadorDidático ;
 +-------------------+---------------------+
@@ -75,10 +75,10 @@ applicable agreement for further details.
 +------------------------------------+---------------------------------+---------------------+----------------+----------------+
 ; Assignment Name                    ; Value                           ; Default Value       ; Entity Name    ; Section Id     ;
 +------------------------------------+---------------------------------+---------------------+----------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 158515246169191.148253861603616 ; --                  ; --             ; --             ;
-; PARTITION_COLOR                    ; 16764057                        ; --                  ; Mux3To1_16Bits ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --                  ; Mux3To1_16Bits ; Top            ;
-; TOP_LEVEL_ENTITY                   ; Mux3To1_16Bits                  ; ProcessadorDidático ; --             ; --             ;
+; COMPILER_SIGNATURE_ID              ; 158515246169191.148254013602260 ; --                  ; --             ; --             ;
+; PARTITION_COLOR                    ; 16764057                        ; --                  ; Register16Bits ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --                  ; Register16Bits ; Top            ;
+; TOP_LEVEL_ENTITY                   ; Register16Bits                  ; ProcessadorDidático ; --             ; --             ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                             ; --                  ; --             ; eda_blast_fpga ;
 +------------------------------------+---------------------------------+---------------------+----------------+----------------+
 
@@ -88,11 +88,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 228 MB              ; 00:00:01                           ;
+; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 234 MB              ; 00:00:01                           ;
 ; Fitter                  ; 00:00:03     ; 1.0                     ; 256 MB              ; 00:00:03                           ;
-; Assembler               ; 00:00:02     ; 1.0                     ; 231 MB              ; 00:00:02                           ;
+; Assembler               ; 00:00:01     ; 1.0                     ; 231 MB              ; 00:00:01                           ;
 ; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 161 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:06     ; --                      ; --                  ; 00:00:06                           ;
+; Total                   ; 00:00:05     ; --                      ; --                  ; 00:00:05                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
